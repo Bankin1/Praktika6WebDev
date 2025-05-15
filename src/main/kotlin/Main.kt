@@ -41,7 +41,7 @@ fun sendEmail() {
         put("mail.smtp.auth", "true")
     }
 
-    val imagePath = "D:/Study/РТУ МИРЭА/3 курс 6 сем/Разработка веб приложений/6/mail/src/main/kotlin/P1050187.JPG"  // Или используйте ресурсы в Android
+    val imagePath = "D:/Study/РТУ МИРЭА/3 курс 6 сем/Разработка веб приложений/6/mail/src/main/kotlin/P1050187.JPG"
     val imageFile = File(imagePath)
 
     if (!imageFile.exists()) {
@@ -171,7 +171,7 @@ private fun getTextFromMessage(msg: Message): String {
 fun fetchLastEmailWithAttachment() {
     val host = "imap.mail.ru"
     val port = 993
-    val saveDir = "D:/Study/РТУ МИРЭА/3 курс 6 сем/Разработка веб приложений/6/mail/src/main/kotlin" // Папка для сохранения вложений
+    val saveDir = "D:/Study/РТУ МИРЭА/3 курс 6 сем/Разработка веб приложений/6/mail/src/main/kotlin"
 
     val props = Properties().apply {
         put("mail.imap.host", host)
